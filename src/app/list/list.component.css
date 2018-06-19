@@ -1,0 +1,18 @@
+button {
+    margin-left:  20px;
+}
+
+#createbttn{
+display: inline-block;
+border-radius: 8px;
+margin-left: 58%;
+}
+
+h2{
+    display: inline-block;
+    width: 25%;
+    margin-left: 15px;
+}
+.headder{
+    padding: 20px 0px;
+}

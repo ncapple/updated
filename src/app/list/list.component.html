@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="headder">
+    <h2>Product List</h2>
+    <button id="createbttn"  class="text-black" [routerLink]="['new']">Create New Product</button>
+  </div>
+
+  <div class="container">            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let p of allProducts'>
+          <td>{{p._id}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.price | currency}}</td>
+          <td>{{p.qty}}</td>
+          <td>
+            <button class="text-black" [routerLink]="[p._id, 'edit']">Edit</button>
+            <button class="text-black" [routerLink]="['product', p._id]">Details</button>
+          </td>        
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+

@@ -1,0 +1,17 @@
+#revcont {
+    border: solid gray 2px;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+}
+button {
+    padding: 10px;
+    margin: 0% 0% 2% 3%;
+    width: 30%;
+    border-radius: 8px;
+}
+
+#buttn {
+    margin-left: 20%;
+}

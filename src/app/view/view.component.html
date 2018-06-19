@@ -1,0 +1,30 @@
+<div class="container"  >
+
+  <div id="revcont">
+
+    <h3>Product Details</h3>
+
+    <div class="view">
+      <p>ID: {{product._id}} </p>
+    </div>
+
+    <div class="view" >
+        <p>Name: {{product.name}}</p>
+    </div>
+
+    <div class="view">
+          <p>Price: {{product.price}} </p>
+    </div>
+
+    <div class="view">
+          <p>Quantity: {{product.qty}} </p>
+    </div>
+    
+    <div id="buttn">
+        <button class="text-black" [routerLink]="['/']"> Back</button>
+        <button class="text-black" (click)="onDelete(product._id)">Delete</button>
+    </div>
+    
+  </div>
+
+</div>
